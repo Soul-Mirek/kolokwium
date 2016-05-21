@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Michał Mirowski"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOBBY</title>
+	<link rel="stylesheet" href="css/themes/noteTheame.css">
+	<link rel="stylesheet" href="css/themes/noteTheame.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="shortcut icon" href="img/logo.png">
+</head>
+	<body>
+		<div data-role="page" id="opis" data-theme="a">
+			<div data-role="header">
+				<h1>Opis</h1>
+			</div>
+			<div data-role="popup" id="zdjecie" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/luk.jpg" alt="Photo landscape">
+				</div>
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a data-iconpos="right" data-icon="grid" href="#opis">Opis</a></li>
+						<li><a data-iconpos="right" data-icon="plus" href="#zdjecie" data-rel="popup" data-position-to="window">Zdjęcie</a></li>
+						<li><a data-iconpos="right" data-icon="gear" href="#autor">Autor</a></li>
+						<li><a data-iconpos="right" data-icon="star" href="#kontakt">Kontakt</a></li>
+					</ul>
+				</div>		
+			</div>
+			<div data-role="main">
+				<p>Łucznictwo tradycyjne</p>
+				<p>Łucznictwo tradycyjne to sztuka posługiwania się repliką bądź rekonstrukcją łuku historycznego, wyglądem oraz charakterystyką zbliżoną do zachowanych egzemplarzy historycznych przy użyciu dawnych technik strzeleckich.
+				</br>W łucznictwie tradycyjnym można wyróżnić dwa style strzelania: przy użyciu techniki śródziemnomorskiej, jak w łucznictwie sportowym, oraz przy użyciu pierścienia łuczniczego.</p>
+				<p>Techniki strzeleckie</p>
+				<p>Dla łucznika, najważniejsza jest wcelność i powtarzalność strzału. Osiąga się to za pomocą doskonalenia techniki strzelania.
+				<br>Technika strzelania jest z kolei determinowana przez rodzaj używanego łuku oraz niekiedy predyspozycje fizyczne.</p>
+			</div>
+			<div data-role="footer">
+				<h1>&copy; Michał Mirowski</h1>
+			</div>
+		</div> 
+		<div data-role="page" id="autor" data-theme="a">
+			<div data-role="header">
+				<h1>Autor</h1>
+			</div>
+			<div data-role="popup" id="zdjecie2" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/luk.jpg" alt="Photo landscape">
+				</div>
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a data-iconpos="right" data-icon="grid" href="#opis">Opis</a></li>
+						<li><a data-iconpos="right" data-icon="plus" href="#zdjecie2" data-rel="popup" data-position-to="window">Zdjęcie</a></li>
+						<li><a data-iconpos="right" data-icon="gear" href="#autor">Autor</a></li>
+						<li><a data-iconpos="right" data-icon="star" href="#kontakt">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">	 
+			</div>
+			<div data-role="footer">
+				<h1>&copy; Michał Mirowski</h1>
+			</div>
+		</div> 
+		
+		<div data-role="page" id="kontakt" data-theme="a">
+			<div data-role="header">
+				<h1>Kontakt</h1>
+			</div>
+			<div data-role="popup" id="zdjecie" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="100,30">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/luk.jpg" alt="Photo landscape">
+				</div>
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a data-iconpos="right" data-icon="grid" href="#opis">Opis</a></li>
+						<li><a data-iconpos="right" data-icon="plus" href="#zdjecie" data-rel="popup" data-position-to="window">Zdjęcie</a></li>
+						<li><a data-iconpos="right" data-icon="gear" href="#autor">Autor</a></li>
+						<li><a data-iconpos="right" data-icon="star" href="#kontakt">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<form method="post" action="demoform.asp">
+					<label for="email">email:</label>
+					<input type="text" name="email" id="temat">
+					<label for="temat">temat:</label>
+					<input type="text" name="temat" id="temat">
+					<label for="wiad">Wiadomość:</label>
+					<textarea type="text" name="wiad" id="wiad"></textarea>
+					<input type="submit" value="Wyślij" data-icon="check" data-iconpos="right" data-inline="true">
+				</form>
+			</div>
+			<div data-role="footer">
+				<h1>&copy; Michał Mirowski</h1>
+			</div>
+		</div> 
+	</body>
+</html>
