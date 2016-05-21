@@ -4,9 +4,9 @@
     <description>
         Zadanie na kolokwium HOBBY
     </description>
-    <author email="michal.l.mirowski@gmail.com" href=" ">
-		Michał Mirowski
-	</author>
+   <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
