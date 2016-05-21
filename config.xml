@@ -10,26 +10,6 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <plugin name="cordova-plugin-battery-status" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-camera" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-media-capture" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-console" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-contacts" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-device" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-device-motion" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-device-orientation" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-dialogs" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-file" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-file-transfer" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-geolocation" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-globalization" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-media" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-network-information" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-splashscreen" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-statusbar" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-vibration" source="npm" spec="&gt;1.0.0" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="&gt;1.0.0" />
 	<plugin name="com.phonegap.plugins.barcodescanner" spec="2.0.0" source="pgb" />
 	<plugin name="com.brodysoft.sqliteplugin" spec="1.0.6" source="pgb" />
 	<plugin name="com.jamiestarke.webviewdebug" spec="1.0.8" source="pgb" />
