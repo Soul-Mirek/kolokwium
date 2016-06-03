@@ -21,6 +21,7 @@ function Przelicz() {
 	newValue2 = newValue / 2;
 	//$.mobile.changePage( "#dialog", { role: "dialog" } );
 	jQuery(document).find('#result').html(newValue);
+	jQuery(document).find('#result2').html(newValue);
 }
 
 	</script>
@@ -57,10 +58,13 @@ function Przelicz() {
 					<label>
 						<input name="radio-choice-0" id="suma" type="radio">Suma
 					</label>
-					<label for="radio-choice-0b">Srednia</label>
-					<input name="radio-choice-0" id="srednia" class="custom" type="radio">
-					<p>Wynik</p><p id="result"></p>
+					<label>
+						<input name="radio-choice-0" id="srednia" type="radio">Srednia
+					</label>
+
 				</form>
+									<p>Wynik</p><p id="result"></p>
+					<p>Wynik2</p><p id="result2"></p>
 			</div>
 			<div data-role="footer">
 				<h1>&copy; Michał Mirowski</h1>
