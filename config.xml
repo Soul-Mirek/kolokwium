@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.kolos" version="0.9.9">
-  <name>Hobby</name>
+  <name>kolos</name>
   <description>Aplikacja na zaliczenie kolokwium</description>
   <author href="http://phonegap.com" email="support@phonegap.com">Michał Mirowski</author>
   <content src="index.html"/>
