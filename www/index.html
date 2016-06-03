@@ -15,14 +15,16 @@
 	<link rel="shortcut icon" href="img/logo.png">
 	<script type="text/javascript">
 function Przelicz() {
-	var X = jQuery('#valuex').value;
-	var Y = jQuery('#valuey').value;
+	var X = document.getElementById('#valuex').value;
+	var Y = document.getElementById(('#valuey').value;
 	var newValue = X+Y;
 	var newValue2 = newValue / 2;
 	//$.mobile.changePage( "#dialog", { role: "dialog" } );
-	jQuery(document).find('#result').html(newValue);
-	jQuery(document).find('#result2').html(newValue2);
-}
+	//jQuery(document).find('#result').html(newValue);
+	//jQuery(document).find('#result2').html(newValue2);
+	document.getElementById('#result').innerHTML = "Suma wynosi " + newValue;
+	document.getElementById('#result2').innerHTML = "Suma wynosi " + newValue;
+	}
 
 
 
