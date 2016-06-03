@@ -15,9 +15,9 @@
 	<link rel="shortcut icon" href="img/logo.png">
 	<script type="text/javascript">
 function Przelicz() {
-	var valuex = jQuery('#valuex').val();
-	var valuey = jQuery('#valuey').val();
-	var newValue = valuex+valuey;
+	var X = jQuery('#valuex').value;
+	var Y = jQuery('#valuey').value;
+	var newValue = X+Y;
 	var newValue2 = newValue / 2;
 	//$.mobile.changePage( "#dialog", { role: "dialog" } );
 	jQuery(document).find('#result').html(newValue);
