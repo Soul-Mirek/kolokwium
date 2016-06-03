@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.niezbednik" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.kolos" version="0.9.9">
   <name>Hobby</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
+  <description>Aplikacja na zaliczenie kolokwium</description>
   <author href="http://phonegap.com" email="support@phonegap.com">Michał Mirowski</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -25,7 +25,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm"/>
   <plugin name="cordova-plugin-vibration" source="npm"/>
   <plugin name="cordova-plugin-whitelist" source="npm"/>
-  <icon src="icon.png"/>
+  <icon src="img/logo.png"/>
   <platform name="android">
     <icon src="img/logo.png" density="ldpi"/>
     <icon src="img/logo.png" density="mdpi"/>
@@ -46,7 +46,7 @@
     <splash src="img/logo.png" density="port-xxhdpi"/>
     <splash src="img/logo.png" density="port-xxxhdpi"/>
   </platform>
-  <platform name="ios">
+  <!--<platform name="ios">
     <icon src="www/res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
     <icon src="www/res/icon/ios/icon@2x.png" platform="ios" width="114" height="114"/>
     <icon src="www/res/icon/ios/icon-40.png" platform="ios" width="40" height="40"/>
@@ -95,7 +95,7 @@
     <icon src="www/res/icon/windows/Wide310x150Logo.scale-100.png" platform="windows" width="310" height="150"/>
     <icon src="www/res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
-  </platform>
+  </platform>-->
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
@@ -106,8 +106,8 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
-  <platform name="ios">
+  <!--<platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
-  </platform>
+  </platform>-->
 </widget>
