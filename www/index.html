@@ -17,13 +17,15 @@
 function Przelicz() {
 	var X = document.getElementById('#valuex').value;
 	var Y = document.getElementById(('#valuey').value;
-	var newValue =parseFloat(X+Y);
+	var x = parseFloat(X);
+	var y = parseFloat(Y);
+	var newValue = x + y;
 	var newValue2 = newValue / 2;
 	//$.mobile.changePage( "#dialog", { role: "dialog" } );
 	//jQuery(document).find('#result').html(newValue);
 	//jQuery(document).find('#result2').html(newValue2);
 	document.getElementById('#result').innerHTML = "Suma wynosi " + newValue;
-	document.getElementById('#result2').innerHTML = "Suma wynosi " + newValue;
+	document.getElementById('#result2').innerHTML = "Średnia wynosi " + newValue2;
 	}
 
 
