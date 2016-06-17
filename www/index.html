@@ -59,20 +59,21 @@ document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wyno
 </script>
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" id="Oblicz" data-theme="a">
 <div data-role="header">
- 
-<div data-role="popup" id="autorPopUp" style=" padding:10px;" class="ui-btn ui-btn-icon-right ui-icon-arrow-r" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+ <h1>Oblicz</h1>
+</div>
+<div data-role="popup" id="autor" style=" padding:10px;" class="ui-btn ui-btn-icon-right ui-icon-arrow-r" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
   <span id="Autor"><h1>Autor</h1></span> 
-<h>        Michał Mirowski</h>
+<p>        Michał Mirowski</p>
 </br>
-<h> Grupa Dziekanska KruiSz2012 </h>
+<p> Grupa Dziekanska Krzuis2012 </p>
 </div>
   <div data-role="main" class="ui-content">
-<h> Rownanie kwadratowe </h>
-<h1> ax^2+bx+c</h1>
- <!--<a href="#autorPopUp" data-rel="popup" data-position-to="window" class="ui-btn">Autor</a>-->
+<p> Rownanie kwadratowe </p>
+<h1> ax^2+bx+c=0</h1>
+ <a href="#autor" data-rel="popup" data-position-to="window" class="ui-btn">Autor</a>
   
 
       <label for="fname">Podaj liczbe a:</label>
@@ -87,6 +88,7 @@ document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wyno
   <button class="ui-btn" id="oblicz" onclick="Delta()">Oblicz</button>
  <button class="ui-btn" id="delta" onclick="Pierwiastek()">Delta</button>
 <button class="ui-btn" id="pierwiastek" onclick="Pierwiastek()">Pierwiastek delta</button>
+<>
 </div>
 
   
