@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Michał Mirowski"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>kolos</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="css/themes/noteTheame.css">
+	<link rel="stylesheet" href="css/themes/noteTheame.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="shortcut icon" href="img/logo.png">
+	<script type="text/javascript">
+function Przelicz() {
+	var X = document.getElementById('#valuex').value;
+	var Y = document.getElementById(('#valuey').value;
+	var x = parseFloat(X);
+	var y = parseFloat(Y);
+	var newValue = x + y;
+	var newValue2 = newValue / 2;
+	//$.mobile.changePage( "#dialog", { role: "dialog" } );
+	//jQuery(document).find('#result').html(newValue);
+	//jQuery(document).find('#result2').html(newValue2);
+	document.getElementById('#result').innerHTML = newValue;
+	document.getElementById('#result2').innerHTML = newValue2;
+	}
+
+
+
+	</script>
+	
+</head>
+	<body>
+		<div data-role="page" id="Oblicz" data-theme="a">
+			<div data-role="header">
+				<h1>Oblicz</h1>
+			</div>
+			<div data-role="popup" id="autor" class="ui-btn ui-btn-icon-right ui-icon-arrow-r" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><p>Michał Mirowski</p> 
+				</div>
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a data-iconpos="right" data-icon="grid" href="#Oblicz">Oblicz</a></li>
+						<li><a data-iconpos="right" data-icon="plus" href="#autor" data-rel="popup" data-position-to="window">Autor</a></li>
+					</ul>
+				</div>		
+			</div>
+			<div data-role="main" class="ui-content">
+				<!--<label for="liczbax">Podaj liczbe x:</label>
+				<input type="text" name="x" id="temat">
+				<label for="temat">podaj liczbe y:</label>
+				<input type="text" name="y" id="temat">
+				<label for="wiad">Wynik:</label>
+				<textarea type="text" name="" id="wiad"></textarea>
+				<input type="submit" value="Oblicz" data-icon="check" data-iconpos="right" data-inline="true">-->
+				<input type="text" id="valuex" class="input-inline">
+				<input type="text" id="valuey" class="input-inline">
+				<a href="#Oblicz" data-role="button" data-rel="dialog" onclick="Przelicz()" style="width:100px;margin:auto">Oblicz</a>
+				<form>
+					<label>
+						<input name="radio-choice-0" id="suma" type="radio">Suma
+					</label>
+					<label>
+						<input name="radio-choice-0" id="srednia" type="radio">Srednia
+					</label>
+
+				</form>
+									<p>Wynik</p><p id="result"></p>
+					<p>Wynik2</p><p id="result2"></p>
+			</div>
+			<div data-role="footer">
+				<h1>&copy; Michał Mirowski</h1>
+			</div>
+		</div> 
+	</body>
+</html>
