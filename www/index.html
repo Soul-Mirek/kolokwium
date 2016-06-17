@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
-	<title>kolos</title>
+		<title>kolos</title>
 	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<link rel="shortcut icon" href="img/logo.png">
+		<link rel="shortcut icon" href="img/logo.png">
 	<script type="text/javascript">
-		function Delta() 
-		{
+  function Delta() 
+{
 
-		 var Liczba1 = document.getElementById('Liczba1').value;
-		 var Liczba2 = document.getElementById('Liczba2').value;
-		 var Liczba3 = document.getElementById('Liczba3').value;
+ var Liczba1 = document.getElementById('Liczba1').value;
+ var Liczba2 = document.getElementById('Liczba2').value;
+ var Liczba3 = document.getElementById('Liczba3').value;
 
-		var x1=(-Liczba2 - Math.sqrt(delta))/ Liczba1*2;
-		var x2=(-Liczba2 + Math.sqrt(delta))/ Liczba1*2;
-		var x0 = -Liczba2/2*Liczba1;
-		var delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
+var x1=(-Liczba2 - Math.sqrt(delta))/ Liczba1*2;
+var x2=(-Liczba2 + Math.sqrt(delta))/ Liczba1*2;
+var x0 = -Liczba2/2*Liczba1;
+var delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
 
-		if (delta > 0)
-		{
-		delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
-		x1=(-(Liczba2) - Math.sqrt(delta))/ (Liczba1*2);
-		x2=(-(Liczba2) + Math.sqrt(delta))/ (Liczba1*2);
-		alert ( "Delta dodatnia -> Twoje miejsca zerowe wynosza:  x1=" + x1 + "   x2=" +x2 );
-		}
-		if (delta==0)
-		 {    
-		  x0 = -(Liczba2)/(2*Liczba1);
-		 alert( "Delta rowna zero -> Twoj miejsce zerowe wynosi: " + x0);
-		}
-		 if (delta < 0)
-		{
-		alert( "Delta ujemna  -> Nie ma miejsca zerowego!");
-		}
-		}
+if (delta > 0)
+{
+delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
+x1=(-(Liczba2) - Math.sqrt(delta))/ (Liczba1*2);
+x2=(-(Liczba2) + Math.sqrt(delta))/ (Liczba1*2);
+alert ( "Delta dodatnia -> Twoje miejsca zerowe wynosza:  x1=" + x1 + "   x2=" +x2 );
+}
+if (delta==0)
+ {    
+  x0 = -(Liczba2)/2*Liczba1;
+ alert( "Delta rowna zero -> Twoj miejsce zerowe wynosi: " + x0);
+}
+ if (delta < 0)
+{
+alert( "Delta ujemna  -> Nie ma miejsca zerowego!");
+}
+}
 
 
-		  function Pierwiastek() 
-		{
+  function Pierwiastek() 
+{
 
-		 var Liczba1 = document.getElementById('Liczba1').value;
-		 var Liczba2 = document.getElementById('Liczba2').value;
-		 var Liczba3 = document.getElementById('Liczba3').value;
-		var delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
+ var Liczba1 = document.getElementById('Liczba1').value;
+ var Liczba2 = document.getElementById('Liczba2').value;
+ var Liczba3 = document.getElementById('Liczba3').value;
+var delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
 
-		document.getElementById('delta').innerHTML = "Twoja delta wynosi: " + delta;
-		pierwiastek=Math.sqrt(delta);
-		document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wynosi: " + pierwiastek;
+document.getElementById('delta').innerHTML = "Twoja delta wynosi: " + delta;
+pierwiastek=Math.sqrt(delta);
+document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wynosi: " + pierwiastek;
 
-		}
-	</script>
+}
+
+</script>
 </head>
 <body>
-	<div data-role="page" id="Oblicz" data-theme="a">
-		<div data-role="header">
-		 <h1>Oblicz</h1>
-		</div>
-		<div data-role="popup" id="autor" style=" padding:10px;" class="ui-btn ui-btn-icon-right ui-icon-arrow-r" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
-		  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-		  <span id="Autor"><h1>Autor</h1></span> 
-		<p>        Michał Mirowski</p>
-		</br>
-		<p> Grupa Dziekanska Krzuis2012 </p>
-		</div>
-		<div data-role="main" class="ui-content">
-			<p> Rownanie kwadratowe </p>
-			<h1> ax^2+bx+c=0</h1>
-			<a href="#autor" data-rel="popup" data-role="button" data-position-to="window" class="ui-btn">Autor</a>
-		 
-			<label for="fname">Podaj liczbe a:</label>
-			<input type="number" value="0" size="3" id="Liczba1">
-		 
-			<label for="fname">Podaj liczbe b:</label>
-			<input type="number" value="0" size="3" id="Liczba2">
+<div data-role="page" id="Oblicz" data-theme="a">
+<div data-role="header">
+ <h1>Oblicz</h1>
+</div>
+<div data-role="popup" id="autor" style=" padding:10px;" class="ui-btn ui-btn-icon-right ui-icon-arrow-r" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+  <span id="Autor"><h1>Autor</h1></span> 
+<p>        Michał Mirowski</p>
+</br>
+<p> Grupa Dziekanska Krzuis2012 </p>
+</div>
+  <div data-role="main" class="ui-content">
+<p> Rownanie kwadratowe </p>
+<h1> ax^2+bx+c=0</h1>
+ <a href="#autor" data-rel="popup" data-role="button" data-position-to="window" class="ui-btn">Autor</a>
+  
 
-			<label for="fname">Podaj liczbe c:</label>
-			<input type="number" value="0" size="3" id="Liczba3">
+      <label for="fname">Podaj liczbe a:</label>
+       <input type="number" value="0" size="3" id="Liczba1">
+  
+      <label for="fname">Podaj liczbe b:</label>
+     <input type="number" value="0" size="3" id="Liczba2">
 
-			<button class="ui-btn" id="oblicz" onclick="Delta()">Oblicz</button>
-			<button class="ui-btn" id="delta" onclick="Pierwiastek()">Delta</button>
-			<button class="ui-btn" id="pierwiastek" onclick="Pierwiastek()">Pierwiastek delta</button>
-		</div>	  
-	</div>
+      <label for="fname">Podaj liczbe c:</label>
+     <input type="number" value="0" size="3" id="Liczba3">
+
+  <button class="ui-btn" id="oblicz" onclick="Delta()">Oblicz</button>
+ <button class="ui-btn" id="delta" onclick="Pierwiastek()">Delta</button>
+<button class="ui-btn" id="pierwiastek" onclick="Pierwiastek()">Pierwiastek delta</button>
+</div>
+
+  
+</div>
 </body>
 </html>
