@@ -26,8 +26,8 @@ var delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
 if (delta > 0)
 {
 delta = (Liczba2*Liczba2)- 4*Liczba1*Liczba3;
-x1=(-(Liczba2) - Math.sqrt(delta))/ Liczba1*2;
-x2=(-(Liczba2) + Math.sqrt(delta))/ Liczba1*2;
+x1=(-(Liczba2) - Math.sqrt(delta))/ (Liczba1*2);
+x2=(-(Liczba2) + Math.sqrt(delta))/ (Liczba1*2);
 alert ( "Delta dodatnia -> Twoje miejsca zerowe wynosza:  x1=" + x1 + "   x2=" +x2 );
 }
 if (delta==0)
@@ -73,7 +73,7 @@ document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wyno
   <div data-role="main" class="ui-content">
 <p> Rownanie kwadratowe </p>
 <h1> ax^2+bx+c=0</h1>
- <a href="#autor" data-rel="popup" data-position-to="window" class="ui-btn">Autor</a>
+ <a href="#autor" data-rel="popup" data-role="button" data-position-to="window" class="ui-btn">Autor</a>
   
 
       <label for="fname">Podaj liczbe a:</label>
@@ -88,7 +88,6 @@ document.getElementById('pierwiastek').innerHTML = "Twoja pierwiastek delta wyno
   <button class="ui-btn" id="oblicz" onclick="Delta()">Oblicz</button>
  <button class="ui-btn" id="delta" onclick="Pierwiastek()">Delta</button>
 <button class="ui-btn" id="pierwiastek" onclick="Pierwiastek()">Pierwiastek delta</button>
-<>
 </div>
 
   
